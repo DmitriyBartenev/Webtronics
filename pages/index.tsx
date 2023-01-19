@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Main from '../components/Main/Main'
 import AboutUs from '../components/Sections/AboutUs'
+import Steps from '../components/Sections/Steps'
 import Technologies from '../components/Sections/Technologies'
 import styles from '../styles/Home.module.scss'
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Main/>
         <AboutUs/>
         <Technologies/>
+        <Steps/>
       </>
     </>
   )
