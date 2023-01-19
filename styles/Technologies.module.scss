@@ -1,0 +1,31 @@
+.technologies{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 120%;
+        max-width: 543px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    p{
+        max-width: 432px;
+        font-size: 16px;
+        line-height: 140%;
+        margin: 16px 0 54px;
+        text-align: center;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
