@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Main from '../components/Main/Main';
 import AboutUs from '../components/Sections/AboutUs';
+import ContactUs from '../components/Sections/ContactUs';
+import Gallery from '../components/Sections/Gallery';
 import Questions from '../components/Sections/Questions';
 import Review from '../components/Sections/Review';
 import Steps from '../components/Sections/Steps';
@@ -22,6 +24,8 @@ export default function Home() {
         <Steps/>
         <Questions/>
         <Review/>
+        <Gallery/>
+        <ContactUs/>
       </>
     </>
   )

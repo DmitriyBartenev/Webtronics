@@ -23,7 +23,7 @@ const QuestionItem: React.FC<QuestionItemProps> = ({title, name}) => {
                     {name}
                 </p>
             )}
-            <Image src={isOpen ? minus : xMark} alt='close' onClick={() => setOpen(!isOpen)}/>
+            <Image src={!isOpen ? minus : xMark} alt='close' onClick={() => setOpen(!isOpen)}/>
         </div>
     )
 }
