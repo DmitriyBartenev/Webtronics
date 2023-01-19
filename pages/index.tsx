@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Main from '../components/Main/Main'
-import AboutUs from '../components/Sections/AboutUs'
-import Steps from '../components/Sections/Steps'
-import Technologies from '../components/Sections/Technologies'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+import Main from '../components/Main/Main';
+import AboutUs from '../components/Sections/AboutUs';
+import Questions from '../components/Sections/Questions';
+import Review from '../components/Sections/Review';
+import Steps from '../components/Sections/Steps';
+import Technologies from '../components/Sections/Technologies';
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <AboutUs/>
         <Technologies/>
         <Steps/>
+        <Questions/>
+        <Review/>
       </>
     </>
   )

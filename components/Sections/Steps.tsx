@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import GroupSteps from '../../public/GroupSteps.png';
 
-import styles from '../../styles/steps.module.scss';
+import styles from '../../styles/Steps.module.scss';
 
 function Steps() {
   return (

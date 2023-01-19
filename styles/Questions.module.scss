@@ -1,0 +1,40 @@
+.questions{
+    padding-top:180px;
+    max-width: 1223px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        max-width: 620px;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    &__box{
+        display: flex;
+    }
+    .questionItem{
+        width: 703px;
+        max-height: 166px;
+        padding:27px 73px 27px 24px;
+        background-image: url('/Subtract.png');
+        background-size: 100% 100%;
+        margin-bottom: 24px;
+        position: relative;
+        h4{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 16px;
+        }
+        img{
+            position: absolute;
+            right: 20px;
+            top: 29px;
+            cursor: pointer;
+        }
+    }
+}
