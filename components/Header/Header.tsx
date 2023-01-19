@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 
 import HeaderLogo from '../../public/header_logo.svg';
-import styles from '../../styles/header.module.scss';
+import styles from '../../styles/Header.module.scss';
 
 function Header() {
   return (
