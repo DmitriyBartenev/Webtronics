@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    img{
+        cursor: pointer;
+    }
     nav{
         width: 525px;
         display: flex;

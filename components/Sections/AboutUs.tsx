@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
 
   
   return (
-    <section className={styles.section__about_us}>
+    <section className={styles.section__about_us} id='about'>
         <h2>About Us</h2>
         <div className={styles.section__mentors}>
             <Image src={Mentors} alt='mentors'/>

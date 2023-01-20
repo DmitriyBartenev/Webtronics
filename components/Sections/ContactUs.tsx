@@ -49,36 +49,38 @@ const ContactUs: React.FC = () => {
     }
 
     return(
-        <section className={styles.form}>
-            <h2>Contact us</h2>
-            <form onSubmit={handleSubmit(submitForm)}>
-                <label>Do you have any kind of help please contact with us.</label>
-                <input
-                    type='text'
-                    placeholder='Name'
-                    className={errors.name?.message ? styles['error'] : 'no error'}
-                    {...register('name')}
-                />
-                <p>{errors.name?.message}</p>
-                <input
-                    type='tel'  
-                    placeholder='Phone'
-                    className={errors.phone?.message ? styles['error'] : 'no error'}
-                    {...register('phone')} 
-                />
-                <p>{errors.phone?.message}</p>
-                <input
-                    type='email'
-                    placeholder='E-mail'
-                    className={errors.email?.message ? styles['error'] : 'no error'}
-                    {...register('email')}
-                />
-                <p>{errors.email?.message}</p>
-                {isSubmitted && <p>Your data has been successfully sent</p>}
-                <button type='submit' disabled={isSubmitted}>
-                    Send
-                </button>
-            </form>
+        <section className={styles.form} id='getintouch'>
+            <div className={styles.form__container}>
+                <h2>Contact us</h2>
+                <form onSubmit={handleSubmit(submitForm)}>
+                    <label>Do you have any kind of help please contact with us.</label>
+                    <input
+                        type='text'
+                        placeholder='Name'
+                        className={errors.name?.message ? styles['error'] : 'no error'}
+                        {...register('name')}
+                    />
+                    <p>{errors.name?.message}</p>
+                    <input
+                        type='tel'  
+                        placeholder='Phone'
+                        className={errors.phone?.message ? styles['error'] : 'no error'}
+                        {...register('phone')} 
+                    />
+                    <p>{errors.phone?.message}</p>
+                    <input
+                        type='email'
+                        placeholder='E-mail'
+                        className={errors.email?.message ? styles['error'] : 'no error'}
+                        {...register('email')}
+                    />
+                    <p>{errors.email?.message}</p>
+                    {isSubmitted && <p>Your data has been successfully sent</p>}
+                    <button type='submit' disabled={isSubmitted}>
+                        Send
+                    </button>
+                </form>
+            </div>
         </section>
     )
 }

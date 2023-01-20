@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>Webtronics</title>
-        <meta name="description" content="test task for Webtronics" />
+        <meta name="description" content="Webtronics" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>

@@ -10,7 +10,7 @@ import styles from '../../styles/Technologies.module.scss';
 
 const Technologies: React.FC = () => {
   return (
-    <section className={styles.technologies}>
+    <section className={styles.technologies} id='programs'>
         <h2>Programming technologies</h2>
         <p>By the end, you’ll have the portfolio and interview skills you need to start your new career.</p>
         <div className={styles.cards}>

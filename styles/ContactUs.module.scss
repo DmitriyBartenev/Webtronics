@@ -1,80 +1,83 @@
 .form{
-    width: 1225px;
-    height: 100%;
-    padding:56px 297px;
-    margin: 0 auto;
-    margin-bottom: 148px;
-    background-color: #191D38;
-    border-color: #15BFFD;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 20px;
-    h2{
-        text-align: center;
-    }
-    form{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 16px 69px 0px;
-        p{
-            margin-bottom: 16px;
+    padding-top: 180px;
+    &__container{
+        width: 1225px;
+        height: 100%;
+        padding:56px 297px;
+        margin: 0 auto;
+        margin-bottom: 148px;
+        background-color: #191D38;
+        border-color: #15BFFD;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 20px;
+        h2{
+            text-align: center;
         }
-        label{
-            margin-bottom: 24px;
-            font-size: 16px;
-            line-height: 140%;
-            font-weight: 400;
-        }
-        input{
-            padding:24px;
-            font-size:16px;
-            line-height: 140%;
-            color:#A2CBFB;
-            background-color: #191D38;
-            border: solid 1px #15BFFD;
-            margin-bottom: 16px;
-            width: 100%;
-            border-radius: 8px;
-            outline: none;
-            &.error{
-                border: solid 1px #FD4646;
-                background-color: rgba(255, 163, 163, 0.2);
+        form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px 69px 0px;
+            p{
+                margin-bottom: 16px;
             }
-            &::placeholder{
-                color: #A2CBFB;
+            label{
+                margin-bottom: 24px;
+                font-size: 16px;
+                line-height: 140%;
+                font-weight: 400;
             }
-            &:active::placeholder{
-                color: #FFF;
+            input{
+                padding:24px;
+                font-size:16px;
+                line-height: 140%;
+                color:#A2CBFB;
+                background-color: #191D38;
+                border: solid 1px #15BFFD;
+                margin-bottom: 16px;
+                width: 100%;
+                border-radius: 8px;
+                outline: none;
+                &.error{
+                    border: solid 1px #FD4646;
+                    background-color: rgba(255, 163, 163, 0.2);
+                }
+                &::placeholder{
+                    color: #A2CBFB;
+                }
+                &:active::placeholder{
+                    color: #FFF;
+                }
+                &:focus{
+                    color: #FFF;
+                }
+                &:focus::placeholder{
+                    color: #FFF;
+                }
             }
-            &:focus{
-                color: #FFF;
-            }
-            &:focus::placeholder{
-                color: #FFF;
-            }
-        }
-        button{
-            width: 100%;
-            padding: 24px 32px;
-            background-image: linear-gradient(#1FF2FF, #2FFFCD);
-            border-radius: 8px;
-            border: none;
-            color: #0A1482;
-            font-size: 20px;
-            line-height: 24px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: .2s;
-            &:hover{
-                color: #3B48D0;
-            }
-            &:active{
-                color: #FFFFFF;
-            }
-            &:disabled{
-                background-image: linear-gradient(#1ff4ff80, #2fffce88);
-                pointer-events: none;
+            button{
+                width: 100%;
+                padding: 24px 32px;
+                background-image: linear-gradient(#1FF2FF, #2FFFCD);
+                border-radius: 8px;
+                border: none;
+                color: #0A1482;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: .2s;
+                &:hover{
+                    color: #3B48D0;
+                }
+                &:active{
+                    color: #FFFFFF;
+                }
+                &:disabled{
+                    background-image: linear-gradient(#1ff4ff80, #2fffce88);
+                    pointer-events: none;
+                }
             }
         }
     }

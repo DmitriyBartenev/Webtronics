@@ -16,7 +16,7 @@ const Questions: React.FC = () => {
     ]);
 
     return (
-    <section className={styles.questions}>
+    <section className={styles.questions} id='questions'>
         <h2>Frequently Asked Questions</h2>
         <div className={styles.questions__box}>
             <div className={styles.questions__box__help}>

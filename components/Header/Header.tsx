@@ -7,13 +7,15 @@ import styles from '../../styles/Header.module.scss';
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-        <Image src = {HeaderLogo} alt='Webtronics main logo' width={169} height={33}/>
+        <a href='#'>
+          <Image src = {HeaderLogo} alt='Webtronics main logo' width={169} height={33}/>
+        </a>
         <nav>
-            <a href='#'>About</a>
-            <a href='#'>Programs</a>
-            <a href='#'>Steps</a>
-            <a href='#'>Questions</a>
-            <a href='#'>Get in touch</a>
+            <a href='#about'>About</a>
+            <a href='#programs'>Programs</a>
+            <a href='#steps'>Steps</a>
+            <a href='#questions'>Questions</a>
+            <a href='#getintouch'>Get in touch</a>
         </nav>
     </header>
   )
