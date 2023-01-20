@@ -71,7 +71,7 @@ const ContactUs: React.FC = () => {
                     {...register('email')}
                 />
                 <p>{errors.email?.message}</p>
-                {isSubmitted && <p>Your Data Succesfully Sent</p>}
+                {isSubmitted && <p>Your data has been successfully sent</p>}
                 <button type='submit'>
                     Send
                 </button>
