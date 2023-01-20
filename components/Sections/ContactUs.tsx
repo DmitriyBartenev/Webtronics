@@ -1,4 +1,4 @@
-import { useForm } from 'react-hook-form';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
@@ -7,19 +7,26 @@ import styles from '../../styles/ContactUs.module.scss';
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const schema = yup.object().shape({
-    name: yup.string().required('Example of required'),
+    name: yup.string().required(),
     phone: yup.string().matches(phoneRegExp, 'Phone number is not valid'),
     email: yup.string().email().required(),
 });
 
+type Inputs = {
+    name: string,
+    phone: string,
+    email: string
+}
+
 const ContactUs = () => {
     
-    const { register, handleSubmit, formState: {errors} } = useForm({
+    const { register, handleSubmit, formState: {errors} } = useForm<Inputs>({
         resolver: yupResolver(schema)
     });
 
-    const submitForm = (data: any) => {
+    const submitForm: SubmitHandler<Inputs> = (data) => {
         //fetch data here ( with axios ^_^ )
+        console.log(data)
     }
 
     return(

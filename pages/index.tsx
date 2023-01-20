@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from '../components/Footer/Footer';
 import Main from '../components/Main/Main';
 import AboutUs from '../components/Sections/AboutUs';
 import ContactUs from '../components/Sections/ContactUs';
@@ -26,6 +27,7 @@ export default function Home() {
         <Review/>
         <Gallery/>
         <ContactUs/>
+        <Footer/>
       </>
     </>
   )
