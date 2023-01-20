@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
+import QuestionMark from '../../public/questionMark.png';
 
 import styles from '../../styles/Questions.module.scss';
 import QuestionItem from './QuestionItem';
@@ -17,9 +19,9 @@ const Questions: React.FC = () => {
     <section className={styles.questions}>
         <h2>Frequently Asked Questions</h2>
         <div className={styles.questions__box}>
-            <div>
+            <div className={styles.questions__box__help}>
                 <p>Do you have any kind of questions?<br/>We are here to help.</p>
-                
+                <Image src={QuestionMark} alt='question mark'/>
             </div>
             <div>
                 {

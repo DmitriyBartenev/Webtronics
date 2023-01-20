@@ -12,13 +12,21 @@
         margin-bottom: 56px;
     }
     &__box{
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+        position: relative;
+        &__help{
+            img{
+                position: absolute;
+                top: 100px;
+            }
+        }
     }
     .questionItem{
         width: 703px;
         max-height: 166px;
         padding:27px 73px 27px 24px;
-        background-image: url('/Subtract.png');
         background-size: 100% 100%;
         margin-bottom: 24px;
         position: relative;
