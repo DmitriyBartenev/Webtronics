@@ -29,8 +29,21 @@
                     min-width: 100px;
                     display: flex;
                     justify-content: space-between;
-                    img{
+                    button{
+                        width: 40px;
+                        height: 40px;
+                        background-size: cover;
+                        border: none;
                         cursor: pointer;
+                        &:disabled{
+                            pointer-events: none;
+                        }
+                    }
+                    .left_arrow{
+                        background: url('../public/leftArrow.svg') no-repeat;
+                    }
+                    .right_arrow{
+                        background: url('../public/rightArrow.svg') no-repeat;
                     }
                 }
             }

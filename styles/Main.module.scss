@@ -48,6 +48,13 @@
                 height: 72px;
                 border: none;
                 border-radius: 8px;
+                transition: .2s;
+                &:hover{
+                    color: #3B48D0;
+                }
+                &:active{
+                    color: #FFFFFF;
+                }
             }
         }
         .title3{

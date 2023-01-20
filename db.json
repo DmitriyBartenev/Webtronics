@@ -11,36 +11,6 @@
       "email": "test2@gmail.com",
       "name": "testname2",
       "phone": "1434567890"
-    },
-    {
-      "name": "Dmitryi",
-      "phone": "89185992442",
-      "email": "barteenv@mfdl.com",
-      "id": 3
-    },
-    {
-      "name": "Dmitryi",
-      "phone": "43434324234",
-      "email": "sdfsdf@dsfsd.com",
-      "id": 4
-    },
-    {
-      "name": "dfgdfg",
-      "phone": "534534543",
-      "email": "gdgfdg@fdgd.com",
-      "id": 5
-    },
-    {
-      "name": "Dmitry",
-      "phone": "42432423",
-      "email": "dflsdf@mfsd.com",
-      "id": 6
-    },
-    {
-      "name": "Dmitryi",
-      "phone": "89185992442",
-      "email": "bartenev@df.cm",
-      "id": 7
     }
   ]
 }
