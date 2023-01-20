@@ -5,5 +5,41 @@
     max-width: 1225px;
     h2{
         margin-bottom:48px;
+        text-align: center;
+    }
+    p{
+        line-height: 140%;
+    }
+    &__container{
+        display: flex;
+        height: 680px;
+        .first_col{
+            height: 100%;
+            max-width: 288px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 24px;
+            P{
+                margin-top: 60px;
+            }
+        }
+        .second_col{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            p{
+                height: fit-content;
+            }
+            div{
+                img{
+                    &:first-child{
+                        margin-right: 24px;
+                    }
+                }
+            }
+        }
     }
 }

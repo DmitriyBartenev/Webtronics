@@ -12,12 +12,12 @@ const Gallery: React.FC = () => {
     return(
         <section className={styles.gallery}>
             <h2>Gallery</h2>
-            <div>
-                <div>
+            <div className={styles.gallery__container}>
+                <div className={styles.first_col}>
                     <p>By the end of this course, you will be able to develop and publish your very own Google Chrome extension! In this course we will focus on coding exercises and projects. </p>
                     <Image src={Programmer} alt='programmer'/>
                 </div>
-                <div>
+                <div className={styles.second_col}>
                     <div>
                         <Image src={Developer} alt='programmer'/>
                         <Image src={Worktable} alt='programmer'/>
