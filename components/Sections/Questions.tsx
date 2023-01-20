@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
-
 import styles from '../../styles/Questions.module.scss';
 import QuestionItem from './QuestionItem';
 
-function Questions() {
+const Questions: React.FC = () => {
 
     const [questions, setQuestions] = useState([
         {id: 1, title: 'What is the price?', name:'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.'},

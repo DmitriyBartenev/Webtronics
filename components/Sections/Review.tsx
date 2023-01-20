@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 
 import styles from '../../styles/Review.module.scss';
@@ -7,8 +8,7 @@ import rightArrow from '../../public/rightArrow.svg';
 import Photo1 from '../../public/photo1.png';
 import Photo2 from '../../public/photo2.png';
 
-const Review = () => {
-    
+const Review: React.FC = () => {
     
     return(
         <section className={styles.review}>

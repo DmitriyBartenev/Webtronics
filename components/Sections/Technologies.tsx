@@ -6,10 +6,9 @@ import ReactLogo from '../../public/react.png';
 import VueLogo from '../../public/vue.png';
 import JavaScriptLogo from '../../public/javascript.png';
 
-
 import styles from '../../styles/Technologies.module.scss';
 
-function Technologies() {
+const Technologies: React.FC = () => {
   return (
     <section className={styles.technologies}>
         <h2>Programming technologies</h2>

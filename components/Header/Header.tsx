@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HeaderLogo from '../../public/header_logo.svg';
 import styles from '../../styles/Header.module.scss';
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
         <Image src = {HeaderLogo} alt='Webtronics main logo' width={169} height={33}/>

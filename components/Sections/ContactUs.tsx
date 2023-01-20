@@ -1,6 +1,8 @@
+import React, {useState} from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import axios from 'axios';
 
 import styles from '../../styles/ContactUs.module.scss';
 
@@ -18,15 +20,32 @@ type Inputs = {
     email: string
 }
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
     
-    const { register, handleSubmit, formState: {errors} } = useForm<Inputs>({
+    const [isSubmitted, setSubmitted] = useState(false);
+
+    const { register, handleSubmit, reset, formState: {errors} } = useForm<Inputs>({
         resolver: yupResolver(schema)
     });
 
-    const submitForm: SubmitHandler<Inputs> = (data) => {
-        //fetch data here ( with axios ^_^ )
-        console.log(data)
+    const submitForm: SubmitHandler<Inputs> = async(data) => {
+
+        try{
+
+            const response = await axios.post('http://localhost:3004/feedback', data);
+
+            if(response.status === 201){
+                setSubmitted(true)
+            }
+
+        }catch(err){
+            console.log(err)
+        }
+
+        setTimeout(() => {
+            setSubmitted(false)
+            reset();
+        },2000)
     }
 
     return(
@@ -52,6 +71,7 @@ const ContactUs = () => {
                     {...register('email')}
                 />
                 <p>{errors.email?.message}</p>
+                {isSubmitted && <p>Your Data Succesfully Sent</p>}
                 <button type='submit'>
                     Send
                 </button>

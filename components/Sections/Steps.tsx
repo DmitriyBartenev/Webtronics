@@ -5,7 +5,7 @@ import GroupSteps from '../../public/GroupSteps.png';
 
 import styles from '../../styles/Steps.module.scss';
 
-function Steps() {
+const Steps: React.FC = () => {
   return (
     <section className={styles.steps}>
         <h2>Steps</h2>

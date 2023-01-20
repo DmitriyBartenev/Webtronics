@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 
 import styles from '../../styles/Gallery.module.scss';
@@ -6,8 +7,7 @@ import Programmer from '../../public/programmer.png';
 import Developer from '../../public/developers.png';
 import Worktable from '../../public/worktable.png';
 
-const Gallery = () => {
-    
+const Gallery: React.FC = () => {
     
     return(
         <section className={styles.gallery}>

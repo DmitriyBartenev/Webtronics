@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 
 import styles from '../../styles/Main.module.scss';
 
-function Main() {
+const Main: React.FC = () => {
   return (
     <main className={styles.main}>
         <Header/>

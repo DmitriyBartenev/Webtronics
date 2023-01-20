@@ -4,7 +4,9 @@ import Image from 'next/image'
 import Mentors from '../../public/mentors.png';
 import styles from '../../styles/AboutUs.module.scss';
 
-function AboutUs() {
+const AboutUs: React.FC = () => {
+
+  
   return (
     <section className={styles.section__about_us}>
         <h2>About Us</h2>
