@@ -1,5 +1,4 @@
 {
-  "homepage": "https://dmitriybartenev.github.io/Webtronics/",
   "name": "testing-frontend",
   "version": "0.1.0",
   "private": true,
@@ -8,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "json-server --watch db.json -p 3004",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "server": "json-server --watch db.json -p 3004"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
@@ -28,7 +25,6 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
     "json-server": "^0.17.1"
   }
 }
