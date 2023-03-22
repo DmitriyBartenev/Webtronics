@@ -16,14 +16,33 @@ const Technologies: React.FC = () => {
 				start your new career.
 			</p>
 			<div className={styles.cards}>
-				<Image src={AngularLogo} alt="angular logo" width={182} height={230} />
-				<Image src={ReactLogo} alt="react logo" width={182} height={230} />
-				<Image src={VueLogo} alt="vue logo" width={182} height={230} />
+				<Image
+					src={AngularLogo}
+					alt="angular logo"
+					width={182}
+					height={230}
+					draggable={false}
+				/>
+				<Image
+					src={ReactLogo}
+					alt="react logo"
+					width={182}
+					height={230}
+					draggable={false}
+				/>
+				<Image
+					src={VueLogo}
+					alt="vue logo"
+					width={182}
+					height={230}
+					draggable={false}
+				/>
 				<Image
 					src={JavaScriptLogo}
 					alt="javascript logo"
 					width={182}
 					height={230}
+					draggable={false}
 				/>
 			</div>
 		</section>
