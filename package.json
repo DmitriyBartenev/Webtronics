@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"config": {
-		"port": 8000
+		"port": 3004
 	},
 	"scripts": {
 		"server": "json-server --watch src/data/db.json --port %npm_package_config_port%",
